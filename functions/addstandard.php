@@ -14,7 +14,7 @@ $standard = mysqli_real_escape_string($link, $_REQUEST['standard_name']);
 // Attempt insert query execution
 $sql = "INSERT INTO standards (standard_name) VALUES ('$standard')";
 if(mysqli_query($link, $sql)){
-    header("Location:tutor-standard-management.php");
+    header("Location:../tutor/tutor-standard-management.php");
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
