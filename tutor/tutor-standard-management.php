@@ -8,17 +8,17 @@
 
   	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  	<link href="css/student.css" rel="stylesheet">
+  	<link href="../css/student.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="../css/style.css">
 
     <link rel="stylesheet" href="css/button.css">
 
-    <link rel="stylesheet" href="css/standard.css">
+    <link rel="stylesheet" href="../css/standard.css">
 </head>
 <body>
 	<div class="box-area">
@@ -38,7 +38,7 @@
       				<div class="col-md-6 text-center mb-5">
       					<h2 class="heading-section">Standards</h2>
                   <div class="test">
-                      <form action="record-delete.php" method="post">
+                      <form action="../record-delete.php" method="post">
                         <button type="submit" name="delete_standard" id="delete_standard" class="example_a" value="Delete Records">Delete Records</button>
                       </form>
                     <button onclick="togglePopup()" class="example_b" value="Add Standard">Add Standard</button>
@@ -89,7 +89,7 @@
                 <div class="close-btn" onclick="togglePopup()">&times;</div>
                 <h1>Select a name:</h1>
                 <p>
-                  <form action="addstandard.php" method="post">
+                  <form action="../functions/addstandard.php" method="post">
                     <label for="fname">Standard Name:</label><br>
                       <input type="text" id="standard_name" name="standard_name"><br>
                       <p></p>
@@ -98,11 +98,11 @@
                 </p>
               </div>
           </div>
-    	<script src="js/jquery.min.js"></script>
-      <script src="js/popper.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/standard.js"></script>
+    	<script src="../js/jquery.min.js"></script>
+      <script src="../js/popper.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/main.js"></script>
+      <script src="../js/standard.js"></script>
 	</div>
 </body>
 </html>

@@ -19,15 +19,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if($count == 1 && $usertype == "Student"){
 
-      header("location:student.php");
+      header("location:student/student.php");
     }
     else if($count == 1 && $usertype == "Tutor"){
 
-      header("location:tutor-area.php");
+      header("location:tutor/tutor-area.php");
     }
     else if($count == 1 && $usertype == "Employer"){
 
-      header("location:employer-area.php");
+      header("location:employer/employer-area.php");
     }
     else{
     echo "Username or Password are incorrect!";
@@ -67,7 +67,7 @@ mysqli_close($link);
           <input type="checkbox" class="check-box"><span>Remember Password</span>
           <button type="submit" class="submit-btn" name="login"> Login in</button>
         </form>
-        <form id="register" action="adduser.php" method="post" class="input-group">
+        <form id="register" action="functions/adduser.php" method="post" class="input-group">
           <input type="text" name="username" class="input-field" placeholder="Username">
           <input type="email" name="email" class="input-field" placeholder="Email">
           <input type="password" name="password" class="input-field" placeholder="Enter Password"></br>

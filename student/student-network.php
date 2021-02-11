@@ -8,15 +8,15 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        <link href="css/student.css" rel="stylesheet">
+        <link href="student.css" rel="stylesheet">
 
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
 
-        <link rel="stylesheet" href="css/standard.css">
+        <link rel="stylesheet" href="../css/standard.css">
 </head>
 <body>
 	<div class="box-area">
@@ -102,7 +102,7 @@
           <div class="close-btn" onclick="togglePopup()">&times;</div>
           <h1>Upload a new file:</h1>
           <p>
-            <form action="add-network.php" method="post" enctype="multipart/form-data">
+            <form action="../functions/add-network.php" method="post" enctype="multipart/form-data">
               <b><label for="document">Document Name:</label><br>
                 <input type="text" id="dname" name="dname"><br>
               <b><label for="upload">Upload file:</label></b><br>
@@ -114,11 +114,11 @@
           </p>
         </div>
     </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/standard.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/standard.js"></script>
 
 	</div>
 </body>

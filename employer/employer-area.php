@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Tutor</title>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<link href="css/student.css" rel="stylesheet">
+	<link href="../css/student.css" rel="stylesheet">
 </head>
 <body>
 	<div class="box-area">
 		<header>
 			<div class="wrapper">
 				<div class="logo">
-					<a href="tutor-area.php">APPRENTICESHIP</a>
+					<a href="../tutor-area.php">APPRENTICESHIP</a>
 				</div>
 				<nav>
 					<a href="employer-student.php">STUDENTS</a>

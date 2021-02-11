@@ -8,22 +8,22 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        <link href="css/student.css" rel="stylesheet">
+        <link href="../css/student.css" rel="stylesheet">
 
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
 
-        <link rel="stylesheet" href="css/standard.css">
+        <link rel="stylesheet" href="../css/standard.css">
 </head>
   <body>
 	<div class="box-area">
 		<header>
 			<div class="wrapper">
         <div class="logo">
-					<a href="student.php">APPRENTICESHIP</a>
+					<a href="../student/student.php">APPRENTICESHIP</a>
 				</div>
 				<nav>
           <a href="tutor-student-management.php">STUDENTS</a> <a href="tutor-standard-management.php">STANDARDS</a> <a href="tutor-document-management.php">DOCUMENTS</a>
@@ -36,7 +36,7 @@
   				<div class="col-md-6 text-center mb-5">
   					<h2 class="heading-section">DOCUMENTS</h2>
             <div class="test">
-                <form action="record-update.php" method="post">
+                <form action="../record-update.php" method="post">
                   <button type="submit" name="gradeupdate" id="gradeupdate" class="example_b" value="Update Grades">Update Grades</button>
                 </form>
             </div>
@@ -103,7 +103,7 @@
     				<div class="col-md-6 text-center mb-5">
     					<h2 class="heading-section">RESEARCH</h2>
               <div class="test">
-                  <form action="record-update.php" method="post">
+                  <form action="../record-update.php" method="post">
                     <button type="submit" name="gradeupdate" id="gradeupdate" class="example_b" value="Update Grades">Update Grades</button>
                   </form>
               </div>
@@ -164,11 +164,11 @@
     		</div>
     	</section>
 
-          <script src="js/jquery.min.js"></script>
-          <script src="js/popper.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="js/main.js"></script>
-          <script src="js/standard.js"></script>
+          <script src="../js/jquery.min.js"></script>
+          <script src="../js/popper.js"></script>
+          <script src="../js/bootstrap.min.js"></script>
+          <script src="../js/main.js"></script>
+          <script src="../js/standard.js"></script>
 
 	</div>
 </body>

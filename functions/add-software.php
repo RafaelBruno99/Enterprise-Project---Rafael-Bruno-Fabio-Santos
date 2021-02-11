@@ -32,7 +32,7 @@
 
             // Check if it was successfull
             if($result) {
-                header( 'Location:student-software.php');
+                header( 'Location:../student/student-software.php');
             }
             else {
                 echo 'Error! Failed to insert the file'

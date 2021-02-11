@@ -9,7 +9,7 @@
     foreach ($chkarr as $id) {
       mysqli_query($conn, "DELETE FROM users WHERE id =".$id);
     }
-    header("Location:tutor-student-management.php");
+    header("Location:../tutor/tutor-student-management.php");
   }
 
   if (isset($_POST['delete_standard'])) {
@@ -17,7 +17,7 @@
     foreach ($chkarr as $id) {
       mysqli_query($conn, "DELETE FROM standards WHERE id =".$id);
     }
-    header("Location:tutor-standard-management.php");
+    header("Location:../tutor/tutor-standard-management.php");
   }
 
   if (isset($_POST['delete_software'])) {
@@ -25,7 +25,7 @@
     foreach ($chkarr as $id) {
       mysqli_query($conn, "DELETE FROM file WHERE id =".$id);
     }
-    header("Location:student-software.php");
+    header("Location:../student/student-software.php");
   }
 
   if (isset($_POST['delete_soft'])) {
@@ -33,7 +33,7 @@
     foreach ($chkarr as $id) {
       mysqli_query($conn, "DELETE FROM file WHERE id =".$id);
     }
-    header("Location:student-soft-skills.php");
+    header("Location:../student/student-soft-skills.php");
   }
 
   if (isset($_POST['delete_research'])) {
@@ -41,7 +41,7 @@
     foreach ($chkarr as $id) {
       mysqli_query($conn, "DELETE FROM file WHERE id =".$id);
     }
-    header("Location:student-research.php");
+    header("Location:../student/student-research.php");
   }
 
   if (isset($_POST['delete_open'])) {
@@ -49,7 +49,7 @@
     foreach ($chkarr as $id) {
       mysqli_query($conn, "DELETE FROM file WHERE id =".$id);
     }
-    header("Location:student-open-source.php");
+    header("Location:../student/student-open-source.php");
   }
 
   if (isset($_POST['delete_network'])) {
@@ -57,7 +57,7 @@
     foreach ($chkarr as $id) {
       mysqli_query($conn, "DELETE FROM file WHERE id =".$id);
     }
-    header("Location:student-network.php");
+    header("Location:../student/student-network.php");
   }
 
   mysqli_close($conn);

@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Tutor</title>
+	<title>Student</title>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<link href="css/student.css" rel="stylesheet">
+	<link href="student.css" rel="stylesheet">
 </head>
 <body>
 	<div class="box-area">
 		<header>
 			<div class="wrapper">
 				<div class="logo">
-					<a href="tutor-area.php">APPRENTICESHIP</a>
+					<a href="student.php">APPRENTICESHIP</a>
 				</div>
 				<nav>
-					<a href="tutor-student-management.php">STUDENTS</a> <a href="tutor-standard-management.php">STANDARDS</a> <a href="tutor-document-management.php">DOCUMENTS</a>
+					<a href="student-software.php">SOFTWARE</a> <a href="student-research.php">RESEARCH</a> <a href="student-open-source.php">OPEN SOURCE</a> <a href="student-soft-skills.php">SOFT SKILLS</a> <a href="student-network.php">NETWORK</a>
 				</nav>
 			</div>
 		</header>
 		<div class="banner-area">
-			<h2>Tutor Management Page</h2>
+			<h2>Welcome to Apprenticeship</h2>
 		</div>
 		<div class="content-area">
 			<div class="wrapper">
