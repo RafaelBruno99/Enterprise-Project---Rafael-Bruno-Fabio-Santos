@@ -2,7 +2,7 @@
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 $link = mysqli_connect("localhost", "root", "", "enterprisedb");
-
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Escape user inputs for security
     $myusername = mysqli_real_escape_string($link, $_POST['username1']);
@@ -18,15 +18,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $count = mysqli_num_rows($result);
 
     if($count == 1 && $usertype == "Student"){
-
+        $_SESSION["username"] = $myusername;
       header("location:student/student.php");
     }
     else if($count == 1 && $usertype == "Tutor"){
-
+        $_SESSION["username"] = $myusername;
       header("location:tutor/tutor-area.php");
     }
     else if($count == 1 && $usertype == "Employer"){
-
+        $_SESSION["username"] = $myusername;
       header("location:employer/employer-area.php");
     }
     else{
