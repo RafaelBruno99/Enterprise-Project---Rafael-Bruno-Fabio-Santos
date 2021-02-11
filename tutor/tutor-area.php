@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Tutor</title>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<link href="../css/student.css" rel="stylesheet">
+	<link href="../student/student.css" rel="stylesheet">
 </head>
 <body>
 	<div class="box-area">

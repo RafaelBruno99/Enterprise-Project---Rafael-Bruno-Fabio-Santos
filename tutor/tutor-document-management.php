@@ -8,7 +8,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        <link href="../css/student.css" rel="stylesheet">
+        <link href="../student/student.css" rel="stylesheet">
 
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
@@ -25,9 +25,10 @@
         <div class="logo">
 					<a href="../student/student.php">APPRENTICESHIP</a>
 				</div>
-				<nav>
-          <a href="tutor-student-management.php">STUDENTS</a> <a href="tutor-standard-management.php">STANDARDS</a> <a href="tutor-document-management.php">DOCUMENTS</a>
-				</nav>
+                <nav>
+                    <a href="tutor-student-management.php">STUDENTS</a> <a href="tutor-standard-management.php">STANDARDS</a> <a href="tutor-document-management.php">DOCUMENTS</a>
+                    <a href="../logout.php"><button type="button" class="btn btn-success" >Logout</button></a>
+                </nav>
 			</div>
 		</header>
     <section class="ftco-section">
@@ -36,7 +37,7 @@
   				<div class="col-md-6 text-center mb-5">
   					<h2 class="heading-section">DOCUMENTS</h2>
             <div class="test">
-                <form action="../record-update.php" method="post">
+                <form action="../student/record-update.php" method="post">
                   <button type="submit" name="gradeupdate" id="gradeupdate" class="example_b" value="Update Grades">Update Grades</button>
                 </form>
             </div>
@@ -103,7 +104,7 @@
     				<div class="col-md-6 text-center mb-5">
     					<h2 class="heading-section">RESEARCH</h2>
               <div class="test">
-                  <form action="../record-update.php" method="post">
+                  <form action="../student/record-update.php" method="post">
                     <button type="submit" name="gradeupdate" id="gradeupdate" class="example_b" value="Update Grades">Update Grades</button>
                   </form>
               </div>

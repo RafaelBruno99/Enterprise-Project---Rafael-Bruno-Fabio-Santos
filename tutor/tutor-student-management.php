@@ -14,7 +14,7 @@
 
   	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  	<link href="../css/student.css" rel="stylesheet">
+  	<link href="../student/student.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
@@ -22,7 +22,6 @@
 
   	<link rel="stylesheet" href="../css/style.css">
 
-    <link rel="stylesheet" href="css/button.css">
 </head>
 <body>
 	<div class="box-area">
@@ -33,10 +32,11 @@
 				</div>
 				<nav>
           <a href="tutor-student-management.php">STUDENTS</a> <a href="tutor-standard-management.php">STANDARDS</a> <a href="tutor-document-management.php">DOCUMENTS</a>
+                    <a href="../logout.php"><button type="button" class="btn btn-success" >Logout</button></a>
 				</nav>
 			</div>
 		</header>
-    <form method="post" action="../record-delete.php">
+    <form method="post" action="../student/record-delete.php">
         <section class="ftco-section">
       		<div class="container">
       			<div class="row justify-content-center">
