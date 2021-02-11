@@ -14,7 +14,7 @@ $grade = mysqli_real_escape_string($link, $_REQUEST['list']);
 // Attempt insert query execution
 $sql = "UPDATE file SET grade = ('$grade')";
 if (mysqli_query($link, $sql)) {
-    header("Location:tutor-document-management.php");
+    header("Location:../tutor/tutor-document-management.php");
 } else {
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
