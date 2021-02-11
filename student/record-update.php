@@ -4,7 +4,7 @@ server with default setting (user 'root' with no password) */
 $link = mysqli_connect("localhost", "root", "", "enterprisedb");
 
 // Check connection
-if($link === false){
+if ($link === false) {
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
@@ -13,9 +13,9 @@ $grade = mysqli_real_escape_string($link, $_REQUEST['list']);
 
 // Attempt insert query execution
 $sql = "UPDATE file SET grade = ('$grade')";
-if(mysqli_query($link, $sql)){
+if (mysqli_query($link, $sql)) {
     header("Location:tutor-document-management.php");
-} else{
+} else {
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
 

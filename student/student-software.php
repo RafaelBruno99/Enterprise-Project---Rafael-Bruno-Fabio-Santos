@@ -26,7 +26,11 @@
                 <a href="student.php">APPRENTICESHIP</a>
             </div>
             <nav>
-                <a href="student-software.php">SOFTWARE</a> <a href="student-research.php">RESEARCH</a> <a href="student-open-source.php">OPEN SOURCE</a> <a href="student-soft-skills.php">SOFT SKILLS</a> <a href="student-network.php">NETWORK</a>
+                <a href="student-software.php">SOFTWARE</a> <a href="student-research.php">RESEARCH</a> <a
+                        href="student-open-source.php">OPEN SOURCE</a> <a href="student-soft-skills.php">SOFT SKILLS</a>
+                <a href="student-network.php">NETWORK</a>
+                <a href="../logout.php"><button type="button" class="btn btn-success" >Logout</button></a>
+
             </nav>
         </div>
     </header>
@@ -37,7 +41,8 @@
                 <div class="col-md-6 text-center mb-5">
                     <h2 class="heading-section">SOFTWARE ENGINEERING</h2>
                     <div class="test">
-                        <button onclick="togglePopup()" class="example_b" value="Add a new document">Add new document</button>
+                        <button onclick="togglePopup()" class="example_b" value="Add a new document">Add new document
+                        </button>
                     </div>
                 </div>
             </div>
@@ -62,32 +67,31 @@
                                 <tbody>
                                 <?php
                                 $conn = mysqli_connect("localhost", "root", "", "enterprisedb");
-                                if ($conn-> connect_error) {
-                                    die("Connection Failed:". $conn-> connect_error);
+                                if ($conn->connect_error) {
+                                    die("Connection Failed:" . $conn->connect_error);
                                 }
 
                                 $sql = 'SELECT id, dName, ksb, name, mime, size, data, created FROM file';
-                                $result = $conn-> query($sql);
+                                $result = $conn->query($sql);
 
-                                if ($result-> num_rows > 0) {
-                                    while ($row = $result-> fetch_assoc()) {
-                                        echo "<tr><td>". $row['id'] ."</td>
-                        <td>". $row['dName'] ."</td>
-                        <td>". $row['ksb'] ."</td>
-                        <td>". $row['name'] ."</td>
-                        <td>". $row['mime'] ."</td>
-                        <td>". $row['size'] ."</td>
-                        <td>". $row['created'] ."</td>
-                        <td><input type='checkbox' name='checkbox[]' value='".$row['id']."'></td>
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo "<tr><td>" . $row['id'] . "</td>
+                        <td>" . $row['dName'] . "</td>
+                        <td>" . $row['ksb'] . "</td>
+                        <td>" . $row['name'] . "</td>
+                        <td>" . $row['mime'] . "</td>
+                        <td>" . $row['size'] . "</td>
+                        <td>" . $row['created'] . "</td>
+                        <td><input type='checkbox' name='checkbox[]' value='" . $row['id'] . "'></td>
                         <td><button type='submit' name='delete_software' id='delete' class='example_c' value='Delete Records'>Delete</button></td>
                         </tr>";
                                     }
                                     echo "</tbody></table></form>";
-                                }
-                                else {
+                                } else {
                                     echo "0 result";
                                 }
-                                $conn-> close();
+                                $conn->close();
                                 ?>
                                 </tbody>
                             </table>
@@ -105,12 +109,14 @@
             <p>
             <form action="../functions/add-software.php" method="post" enctype="multipart/form-data">
                 <br><label for="document">Document Name:</label><br>
-                    <input type="text" id="dname" name="dname"><br>
-                    <b><label for="upload">Upload file:</label></b><br>
-                    <input type="file" id="uploaded_file" name="uploaded_file"><br>
-                    <br><label for="ksbs">Manifested KBS's:</label><br>
-                        <textarea name="ksb" cols="40" rows="4" placeholder="Write the KSBs that are manifested in this work..."></textarea>
-                        <input type="submit" class="example_c" value="Submit"><p>
+                <input type="text" id="dname" name="dname"><br>
+                <b><label for="upload">Upload file:</label></b><br>
+                <input type="file" id="uploaded_file" name="uploaded_file"><br>
+                <br><label for="ksbs">Manifested KBS's:</label><br>
+                <textarea name="ksb" cols="40" rows="4"
+                          placeholder="Write the KSBs that are manifested in this work..."></textarea>
+                <input type="submit" class="example_c" value="Submit">
+                <p>
             </form>
         </div>
     </div>
