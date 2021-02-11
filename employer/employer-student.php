@@ -14,15 +14,14 @@
 
   	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  	<link href="../css/student.css" rel="stylesheet">
+  	<link href="../student/student.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
-  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   	<link rel="stylesheet" href="../css/style.css">
 
-    <link rel="stylesheet" href="css/button.css">
 </head>
 <body>
 	<div class="box-area">
@@ -33,6 +32,7 @@
 				</div>
 				<nav>
           <a href="employer-student.php">STUDENTS</a>
+                    <a href="../logout.php"><button type="button" class="btn btn-success" >Logout</button></a>
 				</nav>
 			</div>
 		</header>
